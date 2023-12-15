@@ -183,7 +183,7 @@ def clean_azure_endpoint(raw_endpoint_name):
     return endpoint_address
 
 
-def openai_chat_completions_request(url, api_key, data, use_tool_naming=True):
+def openai_chat_completions_request(url, api_key, data, use_tool_naming=False):
     """https://platform.openai.com/docs/guides/text-generation?lang=curl"""
     from memgpt.utils import printd
 
